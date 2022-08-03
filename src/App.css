@@ -1,38 +1,127 @@
-.App {
+
+.main{
+  border: 2px solid rgb(190, 187, 187);
+  padding: 3%;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 3px 3px 10px #8b8a8a;
+  border-radius: 7px;
+  width: 30%;
+  text-align: center;
+  margin: 10% auto;
+}
+.main label{
+  font-weight: 500;
+  
+}
+.main #income{
+  padding: 1.7% 1%;
+  margin: 4% 0 4% 2%;
+}
+.main button{
+  margin-top: 6%;
+  padding: 1.7% 6%;
+  background-color: #b4b2b2;
+  border: 2px solid #8a8989;
+  border-radius: 4px;
+ 
+}
+#error{
+  color: red;
+}
+
+/* EXPENSE  */
+.expenseMain{
+  width: 40%;
+  padding: 2%;
+  margin: 4% auto;
+  border: 1px solid #eee;
+  background-color: rgb(243, 243, 243);
+}
+.expenseMain #expenseHead{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.expenseMain #showIncome{
+  line-height: .5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.showRatio{
   display: flex;
-  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  padding: 2%;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+  box-shadow: 1px 1px 7px #8a8989;
+}
+#balanceNumber{
+  color: green;
+  text-align: center;
+}
+#expenseNumber{
+  color: red;
+  text-align: center;
+}
+.addTransaction{
+  margin-top: 13%;
+}
+hr{
+  /* width: 90%; */
+  /* text-align: left; */
+}
+.chooseOptions{
+  width: 100%;
+}
+.chooseOptions select,#amount{
+  width: 90%;
+  padding: 1% 0;
+}
+#addTransaction{
+  width: 60%;
+  margin: 6% 0 4% 15%;
+  background-color: rgb(231, 141, 231);
   color: white;
+  font-weight: 600;
+  border: 1px solid rgb(233, 163, 233);
+  padding: 2% 1%;
+  
+}
+.singleHistory{
+  background-color: white;
+  padding: 2.5% 2%;
+  margin: 1.5% 0;
+  box-shadow: 1px 1px 7px #8a8989;
+}
+.singleHistory table{
+  width: 100%;
+}
+.singleHistory table tr{
+ width: 100%;
+}
+.singleHistory table td{
+  width: 33%;
+  /* text-align: center; */
+}
+.singleHistory table #icon{
+  text-align: center;
+}
+.iconButton{
+  border: none;
+  background: none;
+}
+.edit{
+  color: blue;
+}
+.remove{
+  color: red;
+}
+.categoryData{
+  margin-top: 4% auto;
+}
+.categoryData table{
+  width: 100%;
+}
+.categoryData table td{
+  width: 60%;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
+import "./App.css";
+import Expense from "./Expense";
+import Income from "./Income";
 
 function App() {
+  const [income, setIncome] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route
+          path="/"
+          element={<Income income={income} setIncome={setIncome} />}
+        />
+        <Route
+          path="/expense"
+          element={<Expense income={income} setIncome={setIncome} />}
+        />
+      </Routes>
     </div>
   );
 }
